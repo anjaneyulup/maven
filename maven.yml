@@ -1,0 +1,8 @@
+--- # anji setup all programs
+- hosts: server2.abc.com
+  user: ricky
+  sudo: yes
+  tasks:
+  - name: installing tomcat package
+    yum: name=tomcat state=install
+- 
